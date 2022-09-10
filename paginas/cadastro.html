@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/PRIMEIRO-PROJETO/node_modules/bootstrap/dist/css/bootstrap.css">
+    <title>Brus & Brus :: Cadastro</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="img/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+   
+  </head>
+
+    <body style="min-width:372px;">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-success border-bottom shadow-sm mb-">
+            <div class="container">
+                
+                <a class="navbar-brand" href=""><strong>Brus & Brus</strong></a>
+               
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a href="../index.html" class="nav-link text-white">Principal</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./contato.html" class="nav-link text-white">Contato</a>
+                        </li>
+                    </ul>
+                    <div class="align-self-end">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a href="./cadastro.html" class="nav-link text-white">Quero me Cadastrar</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link text-white">Entrar</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link text-white">
+                                    <svg class="bi" width="24" height="24" fill="currentColor">
+                                        <use xlink:href="../bi.svg#cart3" />
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <main>
+            <div class="container">
+                <h1>Informe seus dados, por favor</h1>
+                <hr>
+               <form>
+                <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                        <fieldset   class="row">
+                            <legend>Dados Pessoais</legend>
+                            <div class="mb-3">
+                                <label for="txtNome" class="form-label">Nome</label>
+                                <input type="text" id="txtNome" class="form-control">
+                            </div>
+                            <div class="mb-3 col-md-6 col-xl-4">
+                                <label for="txtCPF" class="form-label">CPF</label>
+                                <span class="form-text">(somente números)</span>
+                                <input type="text" class="form-control" id="txtCPF">
+                            </div>
+                            <div class="mb-3 col-md-6 col-xl-4">
+                                <label for="txtDataNascimento" class="form-label">Data de Nascimento</label>
+                                <input type="date" class="form-control" id="txtDataNascimento">
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Contatos</legend>
+                            <div class="mb-3 col-md-8">
+                                <label for="txtEmail" class="form-label">E-mail</label>
+                                <input type="email" id="txtEmail" class="form-control">
+                            </div>
+                            <div class="mb-3 col-md-6">
+                                <label for="txtTelefone" class="form-label">Telefone</label>
+                                <input type="tel" id="txtTelefone" class="form-control" placeholder="47988776655">
+                                <span class="form-text">(com DDD, somente números)</span>
+                            </div>
+                        </fieldset>
+
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <fieldset class="row">
+                            <legend>Endereço</legend>
+                            <div class="mb-3 col-md-6 col-lg-4">
+                                <label for="txtCEP" class="form-label">CEP</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" id="txtCEP">
+                                    <span class="input-group-text p-1">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                            <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                                            <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                                          </svg>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="mb-3 col-md-6 col-lg-8 align-self-end">
+                                <textarea class="form-control text-muted bg-light" style="height: 68px;"> Digite o CEP para buscar o endereço.</textarea>
+                            </div>
+                            <div class="mb-3 col-md-4">
+                                <label for="txtNumero" class="form-label">Número</label>
+                                <input type="text" id="txtNumero" class="form-control">
+                            </div>
+                            <div class="mb-3 col-md-8">
+                                <label for="txtComplemento" class="form-label">Complemento</label>
+                                <input type="text" id="txtComplemento" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="txtReferencia" class="form-label">Referência</label>
+                                <input type="text" id="txtReferencia" class="form-control">
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Senha de Acesso</legend>
+                            <div class="mb-3">
+                                <label for="txtSenha" class="form-label">Senha</label>
+                                <input type="password" id="txtSenha" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="txtConfirmacaoSenha" class="form-label">Confirmação de Senha</label>
+                                <input type="password" id="txtConfirmacaoSenha" class="form-control">
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
+                <hr>
+                <div class="form-check mb-3">
+                    <input type="checkbox" class="form-check-input" value="" id="chkPromocoes">
+                    <label for="chkPromocoes" class="form-check-label">Desejo receber informações sobre promoções.</label>
+                </div>
+                <div class="mb-3">
+                    <a href="../index.html" class="btn btn-light btn-outline-success">Cancelar</a>
+                    <input type="button" value="Criar meu Cadastro" class="btn btn-success" onclick="window.location.href='./confirmarcadastro.html'">
+                </div>
+               </form>
+            </div>
+        </main>
+
+        <div style="height: 273px;" class="d-block d-md-none"></div>
+        <div style="height: 153px;" class="d-none d-md-block d-lg-none"></div>
+        <div style="height: 129px;" class="d-none d-lg-block"></div>
+
+
+        <footer class="border-top text-muted bg-light">
+            <div class="container">
+                <div class="row py-3">
+                    <div class="col-12 col-md-4 text-center text-md-left">
+                        &copy; 2022 - Brus & Brus Ltda ME <br>
+                        R Eudoro Silveira, 578 - Ap 101 - São Vicente - Itajaí, SC <br>
+                        34.573.092/0001-10
+                    </div>
+                    <div class="col-12 col-md-4 text-center">
+                       <a href="/PRIMEIRO-PROJETO/paginas/politicapriv.html" class="text-decoration-none text-dark">Política de Privacidade</a><br>
+                       <a href="/PRIMEIRO-PROJETO/paginas/termosdeuso.html" class="text-decoration-none text-dark">Termos de Uso</a><br>
+                       <a href="/PRIMEIRO-PROJETO/paginas/quemsomos.html" class="text-decoration-none text-dark">Quem Somos</a><br>
+                       <a href="/PRIMEIRO-PROJETO/paginas/trocasedev.html" class="text-decoration-none text-dark">Trocas e Devoluções</a>
+                    </div>
+                    <div class="col-12 col-md-4 text-center text-md-right">
+                    <a href="/PRIMEIRO-PROJETO/paginas/contato.html" class="text-decoration-none text-dark">Contato pelo Site</a><br>
+                    E-mail: <a href="mailto:email@dominio.com" class="text-decoration-none text-dark">email@dominio.com</a><br>
+                    Telefone: <a href="phone:4799157083" class="text-decoration-none text-dark">(47)9915-7083</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    <script src="/PRIMEIRO-PROJETO/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+ 
+    </body>
+
+</html>
